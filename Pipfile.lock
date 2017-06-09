@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3d187f8df99aa5582d67a0fdd294f022fabd58b17066ca1b228e1238cf1c551a"
+            "sha256": "9984c66aa4ac2e0f1466dee463fcd5e95ea978a1e2f45e04cc07ebd25dffe2dc"
         },
         "requires": {
             "python_version": "3.6"
@@ -16,9 +16,6 @@
     "default": {
         "click": {
             "version": "==6.7"
-        },
-        "expecter": {
-            "version": "==0.3.0"
         },
         "flask": {
             "version": "==0.12.2"
