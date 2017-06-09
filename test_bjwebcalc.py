@@ -5,8 +5,16 @@ from bjwebcalc import app, mongo
 
 
 @pytest.fixture
-def client():
-    return app.test_client()
+def pattern():
+    with app.app_context():
+        mongo.db.operations.drop()
+        mongo.db.operations.insert(
+            dict(
+                name="x",
+                pattern="{{ a * b }}"
+            )
+        )
+
 
 
 def describe_index():
