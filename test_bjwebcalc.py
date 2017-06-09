@@ -1,7 +1,7 @@
 import pytest
 from expecter import expect
 
-from webcalc import app
+from bjwebcalc import app
 
 
 @pytest.fixture
