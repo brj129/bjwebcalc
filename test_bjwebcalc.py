@@ -39,3 +39,4 @@ def describe_calc():
             response = client.get('/4/x/5')
 
             expect(response.data).contains(b"20")
+Contact GitHub API Training Shop Blog About
