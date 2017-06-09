@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7702b4c34fe52a2ed7df268126577dc786629c461c7af9f6ae39a3aeef64df69"
+            "sha256": "3d187f8df99aa5582d67a0fdd294f022fabd58b17066ca1b228e1238cf1c551a"
         },
         "requires": {
             "python_version": "3.6"
@@ -16,6 +16,9 @@
     "default": {
         "click": {
             "version": "==6.7"
+        },
+        "expecter": {
+            "version": "==0.3.0"
         },
         "flask": {
             "version": "==0.12.2"
@@ -42,6 +45,9 @@
         },
         "pytest": {
             "version": "==3.1.2"
+        },
+        "pytest--expecter": {
+            "version": "==.2.2.post6"
         },
         "pytest-describe": {
             "version": "==0.11.0"
