@@ -1,20 +1,12 @@
 import pytest
 from expecter import expect
 
-from bjwebcalc import app, mongo
+from bjwebcalc import app
 
 
 @pytest.fixture
-def pattern():
-    with app.app_context():
-        mongo.db.operations.drop()
-        mongo.db.operations.insert(
-            dict(
-                name="x",
-                pattern="{{ a * b }}"
-            )
-        )
-
+def client():
+    return app.test_client()
 
 
 def describe_index():
