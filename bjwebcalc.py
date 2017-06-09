@@ -1,8 +1,16 @@
+import os
+
 from flask import Flask
+from flask_pymongo import PyMongo
+from jinja2 import Template
 
 
 app = Flask(__name__)
 
+if os.getenv('MONGODB_URI'):
+    app.config['MONGO_URI'] = os.getenv('MONGODB_URI')
+
+mongo = PyMongo(app)
 
 @app.route('/')
 def index():
