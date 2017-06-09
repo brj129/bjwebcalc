@@ -1,7 +1,7 @@
 import pytest
 from expecter import expect
 
-from bjwebcalc import app
+from bjwebcalc import app, mongo
 
 
 @pytest.fixture
