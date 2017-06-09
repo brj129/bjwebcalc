@@ -14,4 +14,4 @@ def describe_index():
     def it_says_hello(client):
         response = client.get('/')
 
-        expect(response.data).contains(b"Helo, world!")
+        expect(response.data).contains(b"Hello, world!")
